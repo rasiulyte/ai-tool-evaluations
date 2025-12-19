@@ -32,10 +32,15 @@ This framework draws from:
 
 ## Evaluations
 
-| Tool | Status | Focus Area |
-|------|--------|------------|
-| GitHub Copilot | 🔄 In Progress | Code assistant evaluation |
+| Tool | Status | Issues | Milestone |
+|------|--------|--------|-----------|
+| GitHub Copilot | 🔄 In Progress | [View Issues](../../issues?q=milestone%3A%22Week+1%3A+GitHub+Copilot%22) | Week 1 |
 
+## Quick Stats
+
+- **Total Issues Found:** 2
+- **High Severity:** 1
+- **Human Vulnerability Concerns:** 2
 ## Repository Structure
 ```
 /github-copilot
