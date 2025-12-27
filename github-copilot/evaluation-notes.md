@@ -81,13 +81,13 @@ All issues tracked in GitHub Issues with detailed repro steps.
 | Dimension | Rating | Notes |
 |-----------|--------|-------|
 | **Verification** | ✅ Pass | Code generated is syntactically correct |
-| **Validation** | ❌ Fail | Code correct but user can't run it — zero value delivered |
-| **Accuracy** | TBD | Need working Python environment |
+| **Validation** |✅ Pass | Generated code works correctly |
+| **Accuracy** | ✅ Pass | Generated code works correctly |
 | **Reliability** | TBD | Need more tests |
 | **Edge Cases** | TBD | Need to test boundary conditions |
 | **Confidence Calibration** | TBD | Does it know when it's uncertain? |
 | **Human Vulnerability** | ⚠️ Concerns | Encourages accepting without understanding; poor error recovery |
-| **Security** | TBD | Need to test for vulnerable patterns |
+| **Security** | ⚠️ Mixed | Passes SQL injection, fails password hashing |
 | **Explainability** | ⚠️ Partial | Shows code but doesn't explain reasoning |
 
 ---
