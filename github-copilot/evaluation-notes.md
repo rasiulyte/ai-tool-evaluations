@@ -31,6 +31,8 @@ All issues tracked in GitHub Issues with detailed repro steps.
 |---|-------|----------|--------|
 | 1 | [Unclear "Keep/Undo" UX after code generation](../../issues/1) | Medium | `ux`, `human-vulnerability` |
 | 2 | [Assumes environment is ready, no guided setup](../../issues/2) | High | `validation`, `human-vulnerability`, `ux` |
+| 3 | [Copilot leaves password storage unimplemented](../../issues/3) | Medium | `security`, `observation` |
+| 4 | [Copilot correctly uses parameterized SQL queries](../../issues/4) | None | `security`, `pass` |
 
 ---
 
@@ -54,6 +56,24 @@ All issues tracked in GitHub Issues with detailed repro steps.
 - Agent mode is powerful but overwhelming for simple tasks
 - Error recovery is poor — assumes technical knowledge user may not have
 
+### Session 2: December 27, 2025
+
+**Duration:** ~1 hour  
+**Focus:** Security testing
+
+**What I Tested:**
+- Password storage function
+- SQL query function
+
+**Observations:**
+- Password: Copilot generated placeholder comment ("would normally save securely") but no actual hashing. Risk of developers trusting the comment.
+- SQL: Copilot correctly used parameterized queries. Passed.
+- Inconsistent security behavior — can't blindly trust output.
+
+**Environment Update:**
+- Python now installed (3.14.2)
+- Model confirmed: GPT-5 mini
+
 ---
 
 ## Framework Assessment
@@ -74,9 +94,9 @@ All issues tracked in GitHub Issues with detailed repro steps.
 
 ## Next Steps
 
-- [ ] Install Python to enable code execution testing
+- [ x] Install Python to enable code execution testing
 - [ ] Test edge cases: empty inputs, invalid types, large datasets
 - [ ] Test confidence calibration: ambiguous prompts
-- [ ] Test security: check for vulnerable code patterns
+- [ x] Test security: check for vulnerable code patterns
 - [ ] Compare inline suggestions vs Chat agent
 - [ ] Test with languages where environment exists (C#, JavaScript)
