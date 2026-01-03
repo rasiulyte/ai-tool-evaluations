@@ -22,7 +22,6 @@ This framework combines traditional software QA methodology with AI-specific eva
 ### Research Foundation
 
 This framework draws from:
-
 - **NIST AI RMF** — GOVERN, MAP, MEASURE, MANAGE functions for AI risk management
 - **NIST ARIA Program** — Sociotechnical testing measuring human-AI interaction impacts
 - **Metamorphic Testing** — Testing input/output relationships when ground truth is unavailable
@@ -32,21 +31,41 @@ This framework draws from:
 
 ## Evaluations
 
-| Tool | Status | Issues | Milestone |
-|------|--------|--------|-----------|
-| GitHub Copilot | 🔄 In Progress | [View Issues](../../issues?q=milestone%3A%22Week+1%3A+GitHub+Copilot%22) | Week 1 |
+| Tool | Status | Issues | Focus Area |
+|------|--------|--------|------------|
+| GitHub Copilot | 🔄 In Progress | [View Issues](../../issues?q=label%3A%22github-copilot%22) | Code generation, security patterns |
+| M365 Copilot (Word) | 🔄 In Progress | [View Issues](../../issues?q=label%3A%22m365-copilot%22+label%3A%22word%22) | Document creation, template handling |
+| M365 Copilot (Excel) | 📋 Planned | — | Formula generation, data analysis |
+| M365 Copilot (PowerPoint) | 📋 Planned | — | Presentation creation, content accuracy |
 
 ## Quick Stats
 
-- **Total Issues Found:** 2
+- **Total Issues Found:** 3
 - **High Severity:** 1
 - **Human Vulnerability Concerns:** 2
+
 ## Repository Structure
 ```
 /github-copilot
   ├── evaluation-notes.md
   ├── edge-cases.md
   └── findings.md
+/m365-copilot
+  ├── word/
+  │   ├── evaluation-notes.md
+  │   ├── edge-cases.md
+  │   └── findings.md
+  ├── excel/
+  │   └── (planned)
+  └── powerpoint/
+      └── (planned)
 /frameworks
   └── evaluation-template.md
 ```
+
+## Session Log
+
+| Date | Tool | Focus | Key Findings |
+|------|------|-------|--------------|
+| 2024-12-27 | GitHub Copilot | Security patterns | Password storage gaps, SQL injection prevention works |
+| 2025-01-03 | M365 Copilot Word | PDF import + template | (pending your test results) |
